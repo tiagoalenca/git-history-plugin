@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension point="org.eclipse.ui.views">
+      <view
+            name="Git History Plugin"
+            icon="icons/sample.gif"
+            category="br.uece.ees.GitHistoryPlugin"
+            class="br.uece.ees.githistoryplugin.views.GitHistoryPluginView"
+            id="br.uece.ees.githistoryplugin.views.GitHistoryPluginView">
+      </view>
+   </extension>
+   <extension point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="org.eclipse.jdt.ui.JavaPerspective">
+         <view
+               ratio="0.5"
+               relative="org.eclipse.ui.views.ProblemView"
+               relationship="right"
+               id="br.uece.ees.githistoryplugin.views.GitHistoryPluginView">
+         </view>
+      </perspectiveExtension>
+   </extension>
+   <extension
+         point="org.eclipse.help.contexts">
+      <contexts
+            file="contexts.xml">
+      </contexts>
+   </extension>
+</plugin>

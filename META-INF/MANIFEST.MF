@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: GitHistoryPlugin
+Bundle-SymbolicName: br.uece.ees.GitHistoryPlugin;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: br.uece.ees.githistoryplugin.views.GitHistoryPluginActivator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.egit.github.core;bundle-version="3.4.2",
+ org.eclipse.jdt.core;bundle-version="3.10.2",
+ org.eclipse.core.resources;bundle-version="3.9.1"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .
